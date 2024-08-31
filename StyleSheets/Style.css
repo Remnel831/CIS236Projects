@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/*
+
+I'm not worried about the fonts for the intro page.  Besides this will probably get overwritten depending on what other pages need.
+@font-face {
+	font-family: 'Arial';
+	src: url('../Fonts/_______.ttf') format('truetype');
+}
+*/
+
+/*Main Styles */
+
+/* this one sets the background */
+body{
+	background-image: url("../Images/SilkBG.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body h1{
+	font-family: '______', Verdana, sans-serif;
+	/*white text, 5em size */
+	color: white;
+	font-size: 5em;
+	/*this just adds a black outline around the H1 */
+	text-shadow: 1px 1px 1px black;
+}
+
+body{
+	/*the body can match the H1,  this just doesn't have the font size setting by default */
+		color: white;
+		text-shadow: 1px 1px 1px black;
+		font-family: '_____', Verdana, sans-serif;
+}
+
+/*Commenting this section out until I need a navbar again*/
+/*
+nav ul{
+//removes bullet points
+	list-style: none;
+}
+
+
+//changes link colors so they're readable on my background texture
+nav a:link {
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 1px black;
+}
+nav a:visited {
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 1px black;
+
+}
+
+//submenu colors
+.submenu a:link {
+	color: black;
+	}
+	
+.submenu a:visited{
+	color: black;
+}
+
+.navMenu:hover .submenu {
+		background-color:white;
+    }	
+*/
+/*
+
+Intro page doesn't have any tables, but I'll leave this here incase I make a page with some!
+table {
+	background-color: gray;
+	border-collapse: separate;
+	border-style: solid;
+}
+
+	
+table tbody th{
+	background-color: black;
+}
+table tbody td{
+	padding: 10px;
+	text-align: Center;
+}
+table tfoot td{
+	font-weight:bold;
+	font-size: 10px;
+}
+
+table a:link{
+color: white;}
+
+table a:visited{
+	color:white;
+}
+*/
+
+/*MOBILE STYLES */
+@media only screen and (min-width:320px) and (max-width: 801px){}
+/*DESKTOP STYLES.*/
+@media only screen and (min-width: 801px){}

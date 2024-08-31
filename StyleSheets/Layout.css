@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+*/
+
+/*Main Body Layouts */
+
+
+p{
+    clear: both;
+}	
+
+/* generic columns. */
+/*
+.column1 {
+	display: block;
+	width: 20%;
+	float: left;
+}
+.column2 {
+	display: block;
+	width: 55%;
+	float: left;
+	Text-align: center;
+}
+.column2 p {
+	Text-align: left;
+	padding-left: 5px;
+}
+.column3 {
+	display: block;
+	width: 25%;
+	float: left;
+}
+
+.row {
+	display: block;
+}
+*/
+    /*media queries*/
+	
+	/*MOBILE SECTION */
+@media only screen and (min-width:320px) and (max-width: 801px){
+
+	/*MOBILE NAV MENU*/
+	/*hides the normal nav menu on mobile*/
+    .navMenu{
+        display:none;
+    }
+	.submenu{
+		display:none;
+	}
+    a#navicon{
+        display:block;
+    }   
+	/*this makes the navmenu display when the nav icon is clicked.  the lynchpin of the whole operation */
+    a#navicon:hover~.navMenu, .navMenu:hover{
+        display:block;
+    }
+
+
+    .navMenu:hover .submenu {
+        display: block;
+
+    }}
+	/*MOBILE TABLES
+	This section not important unless a table is added.
+	*/
+	/*
+		thead, tfoot {
+		display:none;
+	}
+	table, tbody,tr,td,th{
+		display:block;
+	}
+	tbody td{
+		display:relative;
+		padding-left: 30%;
+	}
+	td::before {
+		content: attr(data-label);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		padding: 5px;
+		width: 30%;
+	}
+}
+*/
+/*Desktop/tablet options.  Anything bigger than a phone really.*/
+@media only screen and (min-width: 801px)
+{
+
+/*desktop nav layout */
+    a#navicon{
+        display:none;
+    }
+	.navMenu{
+        display:block;
+        float:left;
+        width:25%;
+    }
+.submenu{
+        display:none;
+		position: absolute;
+		width: 25%;
+    }	
+.navMenu:hover .submenu {
+        display: block;
+        float:left;
+		width: 10em;
+    }	
+}
